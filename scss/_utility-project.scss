@@ -1,0 +1,116 @@
+$color-primary : #AA0601;
+$color-sec : #650300;
+$indexbg-color : #AA06010D;
+
+/*text-bold*/
+.font-bold {
+    font-weight: bold;
+}
+/*text-bold*/
+
+/*text-italic*/
+.text-italic {
+    font-style: italic;
+}
+/*text-italic*/
+
+
+/*text-color*/
+.text-primary {
+    color: $color-primary;
+}
+
+.text-sec {
+    color: $color-sec;
+}
+
+.text-light {
+    color: #ffffff;;
+}
+
+.rec-text {
+    color: #212529;;
+}
+
+.rec-update-text {
+    color:  #707070;
+}
+
+.text-dark {
+    color: #000000;
+}
+/*text-color*/
+
+/*bg-color*/
+.bg-primary {
+    background-color: $color-primary;
+}
+
+.bg-sec {
+    background-color: $indexbg-color;
+}
+/*bg-color*/
+
+/*pd*/
+.container-pd1 {
+    padding: 64px 0px 80px 0px;
+    @include Pad {
+        padding-top: 40px;
+    }
+    @include Mobile {
+        padding: 32px 0px 52px 0px;
+    }
+}
+.container-pd2 {
+    padding: 64px 0px 80px 0px;
+    @include Pad {
+        padding-top: 40px;
+    }
+    @include Mobile {
+        padding: 32px 0px;
+    }
+}
+.container-margin {
+    @include Pad {
+        margin: auto 39px;
+    }
+    @include Mobile {
+        margin: auto 15px;
+    }
+}
+/*pd*/
+
+/*mt*/
+.item-mt {
+    margin-top: 60px;
+    @include Pad {
+        margin-top: 32px;
+    }
+    @include Mobile {
+        margin-top: 20px;
+    }
+}
+/*mt*/
+
+/*title*/
+.main-title1 {
+    font-weight: bold;
+    font-size: 3rem;
+    @include Pad {
+        font-size: 2rem;
+    }
+    @include Mobile {
+        font-size: 1.5rem;
+    }
+}
+
+.main-title2 {
+    font-weight: bold;
+    font-size: 3rem;
+    @include Pad {
+        font-size: 2rem;
+    }
+    @include Mobile {
+        font-size: 1.25rem;
+    }
+}

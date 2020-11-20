@@ -1,0 +1,231 @@
+/*header*/
+
+.logo {
+    width: 80px;
+    height: 49px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    @include hide-text;
+    @include Mobile {
+        width: 48px;
+        height: 30px;
+        background-size: contain;
+    }
+}
+
+.hover-opac {
+    a:hover , 
+    a:active {
+        opacity: 0.6;
+    }
+}
+nav {
+    padding: 30px 88px;
+    justify-content: space-between;
+    li {
+        padding: 0px 32px;
+    }
+    li:first-child {
+        padding-left: 0px;
+    }
+    li:last-child {
+        padding-right: 0px;
+    }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    @include Pad {
+        padding: 30px 39px;
+        li {
+            padding: 0px 20px;
+        }
+    }
+    @include Mobile {
+        justify-content: center;
+        padding: 0px;
+        h1 {
+            width: 100%;
+            padding: 10px 0px;
+        }
+        .logo {
+            margin: 0 auto;
+        }
+        .menu {
+            width: 100%;
+            li {
+                width: 50%;
+                border: 1px solid #ffffff;
+            }
+            li:first-child ,
+            li:last-child {
+                padding: 0px;
+            }
+            a {
+                padding: 8px 54px;
+            }
+            a:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+footer {
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .contact {
+        padding: 36px 0px 20px 0px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .menu-footer {
+        margin-bottom: 36px;
+        li {
+            padding: 0px 24px;
+        }
+        li:first-child {
+            padding-left: 0px;
+        }
+        li:last-child {
+            padding-right: 0px;
+        }    
+    }
+    .contact-info {
+        font-size: 2.25rem;
+        li:first-child {
+            margin-top: 17px;
+        }
+        .phone-icon {
+            width: 44px;
+            margin-right: 17px;
+        }
+        .mail-icon {
+            width: 48px;
+            margin-right: 12px;
+        }
+    }
+    .sns {
+        font-size: 3rem;
+        li {
+            margin: 0px 16px;
+        }
+        li:first-child {
+            margin-left: 0px;
+        }
+        li:last-child {
+            margin-right: 0px;
+        }
+    }
+    .end-footer {
+        padding: 24px 0px 28.43px 0px;
+        justify-content: space-between;
+        .logo-footer {
+            margin-right: 38px;
+        }
+        li:first-child {
+            align-items: center;
+        }
+        .privacy-list {
+            align-items: center;
+            li:first-child {
+                margin-right: 62px;
+            }
+        }
+    }
+    @include Pad {
+        .container {
+            margin: 0px 39px;
+        }
+        .contact {
+            padding: 40px 0px 36px 0px;
+        }
+        .menu-footer {
+            margin-bottom: 24px;
+            li {
+                padding: 0px 20px;
+            }
+            li:first-child {
+                padding-left: 9px;
+            }
+        }
+        .contact-info {
+            font-size: 1.25rem;
+            li:first-child {
+                margin-top: 8px;
+            }
+            .phone-icon {
+                width: 24px;
+                margin-right: 12px;
+            }
+            .mail-icon {
+                width: 32px;
+                margin-right: 8px;
+            }
+        }
+        .sns {
+            font-size: 1.5rem;
+            li {
+                margin: 0px 12px;
+            }
+            li:first-child {
+                margin-left: 0px;
+            }
+            li:last-child {
+                margin-right: 0px;
+            }
+        }
+        .end-footer {
+            padding-bottom: 40px;
+            .logo-footer {
+                display: none;
+            }
+            .privacy-list {
+                li:first-child {
+                    margin-right: 24px;
+                }
+            }
+        }
+}
+    @include Mobile {
+        .container {
+            margin: 0px 15px;
+        }
+        .contact {
+            padding: 24px 0px;
+        }
+        .menu-footer {
+            display: none;
+        }
+        .contact-info {
+            font-size: 1rem;
+            li:first-child {
+                margin-top: 7px;
+            }
+            .phone-icon,
+            .mail-icon {
+                width: 20px;
+                margin-right: 5px;
+            }
+        }
+        .end-footer {
+            position: relative;
+            padding: 18px 0px 21.07px 0px;
+            flex-direction: column;
+            align-items: stretch;
+            .logo-footer {
+                display: block;
+                position: absolute;
+                right: 0px;
+                bottom: 21.07px;
+            }
+            .privacy-list {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    }
+
+}

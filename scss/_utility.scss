@@ -1,0 +1,42 @@
+/*utility*/
+
+/*margin*/
+.m-0 {
+    margin: 0 auto;
+}
+
+/*text*/
+.text-capital {
+    text-transform: uppercase;
+}
+.ta-center {
+    text-align: center;
+}
+
+/*flex*/
+.d-f {
+    @include d-f;
+}
+.d-ib {
+    display: inline-block;
+}
+.jc-center {
+    justify-content: center;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-fstar {
+    justify-content: flex-start;
+}
+.ai-center {
+    align-items: center;
+}
+.fw-wrap {
+    flex-wrap: wrap;
+}
+/*bg*/
+.bg-norepeat {
+    background-repeat: no-repeat;
+}
+/*utility*/
